@@ -1,0 +1,137 @@
+/* style.css */
+
+/* Pengaturan umum dan reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 1. Warna latar belakang berbeda untuk setiap tag utama */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #666;
+}
+
+/* 2. Pengaturan untuk tag <nav> (menggunakan Flexbox) */
+nav {
+    display: flex; /* Aktifkan Flexbox */
+    justify-content: space-between; /* Menempatkan logo di kiri dan menu di kanan */
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    color: white;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+    /* Memberikan warna background berbeda */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Menu navigasi juga menggunakan flex untuk itemnya berjejer */
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+    /* 7. Menu navigasi untuk menuju ke suatu halaman (kecuali tag nav itu sendiri) */
+    /* Karena <ul> ada di dalam <nav>, ini adalah menu utama. */
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+/* 3. dan 4. Pengaturan untuk tag <section> (menggunakan Grid) */
+section {
+    display: grid; /* Aktifkan Grid */
+    /* Membuat 2 kolom: kolom pertama (article) fleksibel, kolom kedua (aside) 300px */
+    grid-template-columns: 2fr 1fr; 
+    gap: 10px;
+    padding: 10px;
+    background-color: #ecf0f1; /* Warna background berbeda untuk section */
+}
+
+article {
+    /* grid-area default untuk area utama */
+    padding: 20px;
+    background-color: #ffffff; /* Warna background berbeda */
+    border: 1px solid #ddd;
+}
+
+aside {
+    /* grid-area default untuk sidebar */
+    padding: 20px;
+    background-color: #dbe4f1; /* Warna background berbeda */
+    border: 1px solid #ddd;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 3px solid #666;
+    /* Memberikan warna background berbeda */
+}
+
+/* Styling konten (kreativitas diutamakan) */
+h2 {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+/* Styling untuk tabel di halaman data diri */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Styling untuk gambar di halaman data diri */
+.profile-img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: block;
+    border: 5px solid #3498db;
+}
