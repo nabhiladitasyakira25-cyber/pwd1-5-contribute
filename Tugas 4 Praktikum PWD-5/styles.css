@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    padding-bottom: 0; 
+}
+
+header, footer {
+    background-color: #C3B1A2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.long-section {
+    padding: 10px 0;
+}
+
+img {
+  display: block;        
+  margin: 20px auto 25px;     
+  width: 60%;            
+  max-width: 350px;      
+  border-radius: 10px;   
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* -------------------------------------- */
+/* Styling Tombol "Scroll to Top" */
+/* -------------------------------------- */
+
+#scrollToTopBtn {
+    /* Posisi: kanan bawah */
+    position: fixed; 
+    bottom: 30px; 
+    right: 30px; 
+    
+    /* Desain tombol bebas (bulat, panah ke atas) */
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%; /* Membuat tombol bulat */
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Memastikan tombol di atas konten lain */
+
+    /* Ketentuan 3: Opacity rendah (hidden/samar) secara default */
+    opacity: 0.3; 
+    
+    /* Transisi untuk efek smooth saat hover dan perubahan visibility */
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+
+    /* Tombol bersifat hidden (invisible, tidak bisa diklik) secara default */
+    visibility: hidden; 
+    pointer-events: none; /* Nonaktifkan klik saat tersembunyi */
+}
+
+/* Ketentuan 3: Opacity menjadi 100% saat hover */
+#scrollToTopBtn:hover {
+    opacity: 1;
+    background-color: #0056b3;
+}
+
+/* Class untuk menampilkan tombol */
+.showBtn {
+    /* Ketentuan: muncul saat scroll > 500px */
+    visibility: visible !important;
+    pointer-events: auto !important; /* Aktifkan klik saat terlihat */
+    opacity: 0.3; /* Menggunakan opacity default dari CSS di sini, akan ditimpa oleh :hover */
+}
