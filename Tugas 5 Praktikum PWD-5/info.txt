@@ -1,0 +1,3 @@
+✅ Data masuk! 
+📡 AJAX udah kerja, kamu tinggal santai~
+Web kamu makin canggih sekarang 😎
