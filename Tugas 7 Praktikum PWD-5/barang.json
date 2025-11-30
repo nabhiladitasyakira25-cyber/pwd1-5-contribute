@@ -1,0 +1,38 @@
+[
+    {
+        "id": "BR001",
+        "nama": "Pulpen Hitam",
+        "harga": 5000,
+        "stok": 30
+    },
+    {
+        "id": "BR002",
+        "nama": "Buku Tulis",
+        "harga": 7000,
+        "stok": 20
+    },
+    {
+        "id": "BR003",
+        "nama": "Pensil 2B",
+        "harga": 3000,
+        "stok": 25
+    },
+    {
+        "id": "BR004",
+        "nama": "Penghapus",
+        "harga": 2000,
+        "stok": 40
+    },
+    {
+        "id": "BR005",
+        "nama": "Spidol Warna",
+        "harga": 8000,
+        "stok": 15
+    },
+    {
+        "id": "BR006",
+        "nama": "Penggaris",
+        "harga": 6000,
+        "stok": 18
+    }
+]
